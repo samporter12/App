@@ -7,7 +7,6 @@ export default function Home() {
     <h1 className="text-4xl font-bold mb-8">¿Qué vas a comer hoy?</h1>
     
     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-      {/* Tarjeta con imagen que redirige a la página de Facebook */}
       <div className="bg-white rounded-lg shadow-lg p-4">
         <Link href="https://www.facebook.com/cubanitosmifavorito/" target="_blank" rel="noopener noreferrer">
           <Image 
