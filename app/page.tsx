@@ -1,101 +1,91 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className="bg-red-500 min-h-screen flex flex-col items-center justify-center text-black">
+    <h1 className="text-4xl font-bold mb-8">¿Qué vas a comer hoy?</h1>
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+      {/* Tarjeta con imagen que redirige a la página de Facebook */}
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.facebook.com/cubanitosmifavorito/" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/f/4/c/f4cceda4-ede5-4ea3-bc2f-463908de693c_large/fast-food-feast-stockcake.jpg" 
+            alt="Comida Rapida" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
+          />
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida Rapida</h2>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.instagram.com/casacoreabogota/" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/3/5/0/3508f93a-05de-4bbe-b7ed-b7774f9803f6_large/korean-feast-gathering-stockcake.jpg" 
+            alt="Comida coreana" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida coreanat</h2>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.facebook.com/p/La-Piccola-Italia-100063544094817/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/e/0/8/e08a2a42-8645-4d03-bcff-de09679e521d_large/hearty-italian-pasta-stockcake.jpg" 
+            alt="Comida Italiana" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida Italiana</h2>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.facebook.com/TierraAztecaPasto/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/f/4/c/f4cceda4-ede5-4ea3-bc2f-463908de693c_large/fast-food-feast-stockcake.jpg" 
+            alt="Comida Mexicana" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida Mexicana</h2>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.instagram.com/bonsaipasto/" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/1/7/7/17701b40-55fb-477f-9802-cd68f807e381_large/sushi-preparation-art-stockcake.jpg" 
+            alt="Comida Japonesa" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
+          />
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida Japonesa</h2>
+      </div>
+
+      <div className="bg-white rounded-lg shadow-lg p-4">
+        <Link href="https://www.instagram.com/oishii.pasto/" target="_blank" rel="noopener noreferrer">
+          <Image 
+            src="https://images.stockcake.com/public/c/9/4/c94930a6-29c0-40d2-bd44-8dfdc85e6818_large/traditional-chinese-feast-stockcake.jpg" 
+            alt="Comida China" 
+            width={300} 
+            height={300} 
+            className="hover:opacity-80 transition-opacity rounded-lg"
+          />
+        </Link>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida China</h2>
+      </div>
     </div>
-  );
+  </div>
+);
 }
