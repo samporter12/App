@@ -30,7 +30,7 @@ export default function Home() {
             className="hover:opacity-80 transition-opacity rounded-lg"
           />
         </Link>
-        <h2 className="text-xl font-semibold mt-4 text-center">Comida coreanat</h2>
+        <h2 className="text-xl font-semibold mt-4 text-center">Comida coreana</h2>
       </div>
 
       <div className="bg-white rounded-lg shadow-lg p-4">
